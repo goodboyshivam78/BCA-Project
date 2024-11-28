@@ -1,0 +1,292 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    outline: none;
+    box-sizing: border-box;
+    border: none;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 60%;
+    overflow-x: hidden;
+}
+
+/* body {
+    background-image: url(background-texture-2110724_1280.jpg);
+    background-image: url(background-texture-2110722_1280.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover; 
+}  */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(54, 54, 53, 0.105);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(8px);
+    z-index: 100;
+    padding: 4rem 5%;
+}
+
+.logo img{
+    height: 60px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.logo img:hover{
+    transform: scale(1.1);
+}
+
+.navbar {
+    font-size: 1.7rem;
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar a{
+    color: rgb(119, 25, 25);
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #15dcb7;
+    border-bottom: 2px solid #15dcb7;
+
+}
+
+/* ------------------------ */
+
+/* Banner Section */
+.banner {
+    margin-top: 75px;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden; /* Hide overflow content */
+}
+
+/* Slider Wrapper */
+.slider {
+    display: flex;
+    width: 100%; /* 100% * Number of slides */
+    height: 100%;
+    transition: transform 1s ease-in-out; /* Smooth transition effect */
+}
+
+/* Individual Slide */
+.slide {
+    flex: 0 0 100%; /* Prevent shrinking and ensure each slide takes 100% of the banner's width*/
+    width: 100%;
+    /* height: 100%; */
+    /*flex-shrink: 0;  Prevent slides from shrinking */
+}
+
+.s1{
+    background-image: url(pexels-startup-stock-photos-7358.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: flex-start;
+    /* text-align: left; */
+}
+
+
+.slide h1{
+    font-size: 8rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 1px 5px rgb(0, 0, 0);
+    margin-top: 1.4rem;
+    font-weight: 700;
+    margin: 40px 0 0 80px;
+    /* line-height: 1; */
+    padding-bottom: 2.1rem;
+    border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+.slide p {
+    font-size: 1.6rem;
+    margin: 10px 0 60px 240px;
+    font-family: "Roboto Condensed", sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 1px 2px rgb(0, 0, 0);
+}
+
+.discription{
+    font-family: "Nunito", serif;
+    font-size: 1.6rem;
+    margin: 10px 0 10px 80px;
+    color: #fdffbb;
+    text-shadow: 2px 1px 2px rgb(53, 52, 52);
+}
+
+.s2{
+    background-image: url(gradient-1761190_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    display: flex;
+    /* flex-direction: column; */
+    align-items: flex-start;
+}
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.cont-img{
+    height: 50vh;
+    display: flex;
+    overflow: hidden;
+    margin: 6rem;
+    box-shadow: 0 0 20px #005eff;
+    transition: 0.3s ease-in-out;
+} 
+
+.cont-img:hover {
+    transform: scale(1.04);
+    border-radius: 10px;
+    box-shadow: 0 0 20px #005eff,
+                0 0 50px #005eff,
+                0 0 70px #005eff;
+}
+
+
+.s3 {
+    background-image: url(geometric-1732847_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.PunchLine {
+    font-family: "Nunito", serif;
+    margin: 10px 0 10px 80px;
+    font-size: 1.7rem;
+    color: rgb(255, 255, 255);
+    padding: 0.6rem;
+    border-left: 4px solid red;
+}
+
+.Pline {
+    font-family: "Nunito", serif;
+    margin: 0 0 10px 80px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    padding: 0.6rem;
+    border-left: 5px solid rgb(34, 0, 255);
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure image fills the slide */
+}
+
+/* Navigation Buttons */
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+
+/* --------------------------- */
+section {
+    min-height: 70vh;
+    background-color: rgb(62, 57, 57);
+    /* padding: 4rem 5%; */
+}
+
+.home {
+    display: flex;
+    padding-top: 4rem;
+    justify-content: space-around;
+    /* align-items: flex-start; */
+    
+}
+
+.home-content {
+    display: flex;
+    height: 40vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.home-content h1{
+    font-size: 8rem;
+    color: whitesmoke;
+    text-shadow: 3px 1px 5px rgb(84, 82, 82);
+    margin-bottom: 1rem;
+    font-weight: 700;
+    padding-bottom: 0.6rem;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    /* line-height: 1; */
+}
+
+.hodName {
+    font-size: 2rem;
+    font-family: "Roboto Condensed", sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 1px 2px rgb(0, 0, 0);
+}
+.content {
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    /* box-shadow: 1px 1px 4px rgb(84, 82, 82); */
+    text-shadow: 3px 3px 4px rgb(84, 82, 82);
+}
+
+.home-img img{
+    width: 60vh;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #4cc1d6;
+    transition: 0.3s ease-in-out;
+}
+
+.home-img img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px #4cc1d6,
+                0 0 50px #4cc1d6,
+                0 0 70px #4cc1d6;
+}
