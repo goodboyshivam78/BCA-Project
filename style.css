@@ -95,7 +95,7 @@ header {
 }
 
 .s1{
-    background-image: url(pexels-startup-stock-photos-7358.jpg);
+    background-image: url(Image/pexels-startup-stock-photos-7358.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
     display: flex;
@@ -135,7 +135,7 @@ header {
 }
 
 .s2{
-    background-image: url(gradient-1761190_1280.jpg);
+    background-image: url(Image/gradient-1761190_1280.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
     display: flex;
@@ -167,7 +167,7 @@ header {
 
 
 .s3 {
-    background-image: url(geometric-1732847_1280.jpg);
+    background-image: url(Image/geometric-1732847_1280.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
     display: flex;
