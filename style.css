@@ -35,6 +35,19 @@ header {
     padding: 4rem 5%;
 }
 
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo h2 {
+    font-size: 1.9rem;
+    font-family: "Oswald", sans-serif;
+    color: #222831;
+}
+
 .logo img{
     height: 60px;
     cursor: pointer;
