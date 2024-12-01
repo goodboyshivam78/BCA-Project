@@ -422,11 +422,17 @@ section {
 
 /* Footer Styles */
 footer {
-    background-color: #222831; /* Dark footer background */
+    background-image: url('Image/abstract-1780378_1280.png');
+    height: 300px;
     color: #ffffff; /* Light text */
     padding: 2rem 5%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-top: 2rem;
+    background-size: cover;
 }
 
 footer p {
