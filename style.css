@@ -346,12 +346,26 @@ section {
 }
 
 .cardProject {
-    background-image: url('Image/pexels-shkrabaanthony-4990532.jpg'); /* Replace with actual image path */
+    background-image: url('Image/desk-5020801_1280.jpg'); /* Replace with actual image path */
 }
 
 /* .card:nth-child(3) */
 .cardClub {
     background-image: url('Image/pexels-hillaryfox-1595385.jpg'); /* Replace with actual image path */
+}
+/* ----------------------------- */
+
+.cardExtraCourse {
+    background-image: url('Image/developer-8829709_1280.jpg'); /* Replace with actual image path */
+}
+
+.cardSubj {
+    background-image: url('Image/digitization-5140071_1280.jpg'); /* Replace with actual image path */
+}
+
+/* .card:nth-child(3) */
+.cardPYQ {
+    background-image: url('Image/pexels-cottonbro-7128752.jpg'); /* Replace with actual image path */
 }
 
 /* Hover effect */
@@ -385,7 +399,7 @@ section {
     position: relative; /* To display above the dim effect */
     z-index: 1;
     transition: color 0.3s ease;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     padding-bottom: 30px;
     font-weight: 500;
     text-shadow: 2px 1px 2px rgb(26, 25, 25);
