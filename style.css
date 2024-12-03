@@ -311,6 +311,7 @@ section {
     padding: 3rem 4%;
     background-color: #fef8e2; /* Light background for contrast */
     text-align: center;
+    border-bottom: 1px solid rgb(192, 182, 201);
 }
 
 .cards h2 {
