@@ -11,6 +11,7 @@
 html {
     font-size: 60%;
     overflow-x: hidden;
+    background-color: #B1F0F7;
 }
 
 /* body {
@@ -24,7 +25,8 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(54, 54, 53, 0.105);
+    background-color: #FBF8EF;
+    box-shadow: 3px 2px 3px rgb(52, 51, 51);
     width: 100%;
     height: 70px;
     display: flex;
@@ -281,37 +283,37 @@ section {
 .hodName {
     font-size: 3rem;
     font-family: "Roboto Condensed", sans-serif;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     text-shadow: 3px 1px 2px rgb(0, 0, 0);
 }
 .content {
     font-size: 1.5rem;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     /* box-shadow: 1px 1px 4px rgb(84, 82, 82); */
-    text-shadow: 3px 3px 4px rgb(84, 82, 82);
+    text-shadow: 2px 2px 3px rgb(84, 82, 82);
     /* font-family: "Roboto", serif; */
 }
 
 .home-img img{
     width: 60vh;
     border-radius: 50%;
-    box-shadow: 0 0 20px #F5F0CD;
+    box-shadow: 0 0 20px #ffffff;
     transition: 0.3s ease-in-out;
 }
 
 .home-img img:hover {
     transform: scale(1.03);
-    box-shadow: 0 0 20px #F5F0CD,
-                0 0 50px #F5F0CD,
-                0 0 70px #F5F0CD;
+    box-shadow: 0 0 20px #ffffff,
+                0 0 40px #ffffff,
+                0 0 60px #ffffff;
 }
 
 /* New Styles for Cards Section */
 .cards {
     padding: 3rem 4%;
-    background-color: #fef8e2; /* Light background for contrast */
+    background-color: #B1F0F7; /* Light background for contrast */
     text-align: center;
-    border-bottom: 1px solid rgb(192, 182, 201);
+    border-bottom: 1px solid rgb(161, 150, 171);
 }
 
 .cards h2 {
