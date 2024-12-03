@@ -35,6 +35,20 @@ header {
     padding: 4rem 5%;
 }
 
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo h2 {
+    font-size: 1.9rem;
+    font-family: "Oswald", sans-serif;
+    color: #222831;
+    transition: 0.4s ease-in-out;
+}
+
 .logo img{
     height: 60px;
     cursor: pointer;
@@ -95,7 +109,7 @@ header {
 }
 
 .s1{
-    background-image: url(pexels-startup-stock-photos-7358.jpg);
+    background-image: url(Image/pexels-startup-stock-photos-7358.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
     display: flex;
@@ -135,7 +149,7 @@ header {
 }
 
 .s2{
-    background-image: url(gradient-1761190_1280.jpg);
+    background-image: url(Image/gradient-1761190_1280.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
     display: flex;
@@ -167,7 +181,7 @@ header {
 
 
 .s3 {
-    background-image: url(geometric-1732847_1280.jpg);
+    background-image: url("Image/geometric-1732847_1280.jpg");
     background-repeat: no-repeat;
     background-size: cover; 
     display: flex;
@@ -232,7 +246,7 @@ button:hover {
 /* --------------------------- */
 section {
     min-height: 70vh;
-    background-color: rgb(62, 57, 57);
+    background-color: #81BFDA;
     /* padding: 4rem 5%; */
 }
 
@@ -246,7 +260,7 @@ section {
 
 .home-content {
     display: flex;
-    height: 40vh;
+    height: 50vh;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-end;
@@ -265,7 +279,7 @@ section {
 }
 
 .hodName {
-    font-size: 2rem;
+    font-size: 3rem;
     font-family: "Roboto Condensed", sans-serif;
     color: rgb(255, 255, 255);
     text-shadow: 3px 1px 2px rgb(0, 0, 0);
@@ -275,18 +289,177 @@ section {
     color: rgb(255, 255, 255);
     /* box-shadow: 1px 1px 4px rgb(84, 82, 82); */
     text-shadow: 3px 3px 4px rgb(84, 82, 82);
+    /* font-family: "Roboto", serif; */
 }
 
 .home-img img{
     width: 60vh;
     border-radius: 50%;
-    box-shadow: 0 0 20px #4cc1d6;
+    box-shadow: 0 0 20px #F5F0CD;
     transition: 0.3s ease-in-out;
 }
 
 .home-img img:hover {
     transform: scale(1.03);
-    box-shadow: 0 0 20px #4cc1d6,
-                0 0 50px #4cc1d6,
-                0 0 70px #4cc1d6;
+    box-shadow: 0 0 20px #F5F0CD,
+                0 0 50px #F5F0CD,
+                0 0 70px #F5F0CD;
+}
+
+/* New Styles for Cards Section */
+.cards {
+    padding: 3rem 4%;
+    background-color: #fef8e2; /* Light background for contrast */
+    text-align: center;
+}
+
+.cards h2 {
+    font-size: 4rem;
+    color: #222831; /* Dark color for text */
+    margin-bottom: 3rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.card-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap; /* Ensure responsiveness */
+}
+
+.card {
+    position: relative; /* For overlay effects */
+    overflow: hidden; /* Clip content */
+    color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 30%; /* Card width */
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px rgba(84, 82, 82, 0.217);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Specific background images for each card */
+.cardbca {
+    background-image: url('Image/pexels-luis-gomes-166706-546819.jpg'); /* Replace with actual image path */
+}
+
+.cardProject {
+    background-image: url('Image/desk-5020801_1280.jpg'); /* Replace with actual image path */
+}
+
+/* .card:nth-child(3) */
+.cardClub {
+    background-image: url('Image/pexels-hillaryfox-1595385.jpg'); /* Replace with actual image path */
+}
+/* ----------------------------- */
+
+.cardExtraCourse {
+    background-image: url('Image/developer-8829709_1280.jpg'); /* Replace with actual image path */
+}
+
+.cardSubj {
+    background-image: url('Image/digitization-5140071_1280.jpg'); /* Replace with actual image path */
+}
+
+/* .card:nth-child(3) */
+.cardPYQ {
+    background-image: url('Image/pexels-cottonbro-7128752.jpg'); /* Replace with actual image path */
+}
+
+/* Hover effect */
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(36, 35, 35, 0.267); /* Dim effect */
+    transition:  0.3s ease;
+}
+
+.card:hover::before {
+    background: rgba(0, 0, 0, 0.8); /* Darker on hover */
+}
+
+.card h3 {
+    position: relative; /* To display above the dim effect */
+    z-index: 1;
+    transition: color 0.3s ease;
+    font-size: 2.2rem;
+    text-shadow: 2px 1px 2px rgb(35, 34, 34);
+    margin-bottom: 30px;
+    font-family: "Ubuntu", serif;
+    color: #fef8e2;
+}
+
+.card p {
+    position: relative; /* To display above the dim effect */
+    z-index: 1;
+    transition: color 0.3s ease;
+    font-size: 1.6rem;
+    padding-bottom: 30px;
+    font-weight: 500;
+    text-shadow: 2px 1px 2px rgb(26, 25, 25);
+    font-family: "Lato", sans-serif;
+    color: #fef8e2;
+}
+
+.card:hover h3,
+.card:hover p {
+    color: #f1f1f1; /* Lighter text on hover */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Zoom effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+/* Footer Styles */
+footer {
+    background-image: url('Image/abstract-1780378_1280.png');
+    height: 300px;
+    color: #ffffff; /* Light text */
+    padding: 2rem 5%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    background-size: cover;
+}
+
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    padding: 1rem;
+    background: transparent;
+    border: 2px solid #ff0000;
+    border-radius: 50%;
+    color: #ffffff;
+    margin: 3rem 0.5rem;
+    transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff0000;
+    background-color:#ffffff;
+    transform: scale(1.2)translateY(-5px);
+    box-shadow: 0 0 25px #2373ea;
+}
+
+footer p {
+    font-size: 1.8rem;
+    font-family: "Poppins", sans-serif;
+    margin: 0.5rem 0;
+    color: #dddddd; /* Slightly muted text for readability */
 }
