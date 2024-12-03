@@ -153,13 +153,47 @@ header {
 .contents{
     font-size: 1.5rem;
 }
-/* Footer */
+/* Footer Styles */
 footer {
-    background: #4caf50;
-    color: white;
+    background-image: url('Image/abstract-1780378_1280.png');
+    height: 300px;
+    color: #ffffff; /* Light text */
+    padding: 2rem 5%;
     text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    background-size: cover;
+}
+
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    padding: 1rem;
+    background: transparent;
+    border: 2px solid #ff0000;
+    border-radius: 50%;
+    color: #ffffff;
+    margin: 3rem 0.5rem;
+    transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff0000;
+    background-color:#ffffff;
+    transform: scale(1.2)translateY(-5px);
+    box-shadow: 0 0 25px #2373ea;
+}
+
+footer p {
+    font-size: 1.8rem;
+    font-family: "Poppins", sans-serif;
+    margin: 0.5rem 0;
+    color: #dddddd; /* Slightly muted text for readability */
 }
 
 /* Responsive Design */
