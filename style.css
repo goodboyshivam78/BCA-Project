@@ -11,7 +11,7 @@
 html {
     font-size: 60%;
     overflow-x: hidden;
-    background-color: #B1F0F7;
+    background-color: #e3f9fb;
 }
 
 /* body {
@@ -250,8 +250,7 @@ button:hover {
 /* --------------------------- */
 section {
     min-height: 70vh;
-    background-color: #81BFDA;
-    /* padding: 4rem 5%; */
+    background: #f9f9f9;
 }
 
 .home {
@@ -425,14 +424,7 @@ section {
 
 
 
-
-
-
-
-
-
-  
-  h1 {
+h1 {
     text-align: center;
     margin: 20px 0;
   }
@@ -462,6 +454,8 @@ section {
     transform: scale(1.1);
   }
   
+ 
+
 
 
 
