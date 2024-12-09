@@ -313,7 +313,7 @@ body {
 
 /* Tech Showcase */
 .tech-showcase {
-    background-color: #ffffff;
+    background: linear-gradient(to right, #4caf50, #81c784);
     padding: 50px 5%;
     text-align: center;
 }
