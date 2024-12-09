@@ -111,7 +111,7 @@ header {
 }
 
 .s1{
-    background-image: url(Image/pexels-startup-stock-photos-7358.jpg);
+    background-image: url("Image/pexels-startup-stock-photos-7358.jpg");
     background-repeat: no-repeat;
     background-size: cover; 
     display: flex;
@@ -151,7 +151,7 @@ header {
 }
 
 .s2{
-    background-image: url(Image/gradient-1761190_1280.jpg);
+    background-image: url("Image/geometric-1732847_1280.jpg");
     background-repeat: no-repeat;
     background-size: cover; 
     display: flex;
@@ -183,7 +183,7 @@ header {
 
 
 .s3 {
-    background-image: url("Image/geometric-1732847_1280.jpg");
+    background-image: url("Image/CollegeImage.jpg");
     background-repeat: no-repeat;
     background-size: cover; 
     display: flex;
@@ -196,8 +196,9 @@ header {
     margin: 10px 0 10px 80px;
     font-size: 1.7rem;
     color: rgb(255, 255, 255);
+    text-shadow: 3px 2px 3px rgb(18, 17, 17);
     padding: 0.6rem;
-    border-left: 4px solid red;
+    border-left: 5px solid rgb(34, 0, 255);
 }
 
 .Pline {
@@ -206,6 +207,7 @@ header {
     font-size: 2rem;
     font-weight: bold;
     color: rgb(255, 255, 255);
+    text-shadow: 3px 2px 3px rgb(18, 17, 17);
     padding: 0.6rem;
     border-left: 5px solid rgb(34, 0, 255);
 }
