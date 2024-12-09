@@ -313,9 +313,9 @@ section {
 /* New Styles for Cards Section */
 .cards {
     padding: 3rem 4%;
-    background-color: #B1F0F7; /* Light background for contrast */
+    background-color: #ffffff; /* Light background for contrast */
     text-align: center;
-    border-bottom: 1px solid rgb(161, 150, 171);
+    border-bottom: 1px solid rgb(196, 180, 180);
 }
 
 .cards h2 {
