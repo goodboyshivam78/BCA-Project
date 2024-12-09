@@ -256,6 +256,7 @@ section {
     display: flex;
     padding-top: 4rem;
     justify-content: space-around;
+    background: rgb(110, 123, 191);
     /* align-items: flex-start; */
     
 }
