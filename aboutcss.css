@@ -89,7 +89,7 @@ header {
 }
 
 .bca {
-    background: linear-gradient(to right, #4caf50, #81c784);
+    background: linear-gradient(to right, #564caf, #9181c7);
     color: white;
     margin-top: 75px;
     padding: 20px 0;
@@ -313,7 +313,7 @@ body {
 
 /* Tech Showcase */
 .tech-showcase {
-    background: linear-gradient(to right, #4caf50, #81c784);
+    background: linear-gradient(to right, #564caf, #9181c7);
     padding: 50px 5%;
     text-align: center;
 }
