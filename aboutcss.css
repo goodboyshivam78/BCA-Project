@@ -26,6 +26,21 @@ html {
     max-width: 1200px;
     margin: 0 auto;
 }
+.bcadetails{
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.bcah1h2{
+    color: #4caf50;
+}
+.bcadetailptag{
+    margin: 1rem 0;
+    font-size: medium;
+}
 
 /* Header */
 header {
@@ -368,4 +383,9 @@ body {
     height: 100px;
     border-radius: 50%;
     margin-bottom: 15px;
+}
+
+.fundamentalimage
+{
+    width: 5rem;
 }

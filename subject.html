@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCA Department - Course Overview</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: #4caf50;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        h1, h2 {
+            margin: 1rem 0;
+        }
+
+        /* Card Styles */
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 1rem 0;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .card-header {
+            background: #4caf50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .card-content {
+            padding: 1rem;
+        }
+        .card-content ul {
+            list-style: none;
+            padding: 0;
+        }
+        .card-content li {
+            margin: 0.5rem 0;
+        }
+
+        /* Carousel */
+        .carousel {
+            display: flex;
+            overflow: hidden;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+        .carousel img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s;
+        }
+        .carousel:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Animations */
+        .fade-in {
+            animation: fadeIn 2s ease-in;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Responsive Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background: #333;
+            color: white;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BCA Department - Course Overview</h1>
+        <p>Explore the subjects covered in our 3-year BCA program</p>
+    </header>
+
+    <div class="container">
+        <!-- Carousel -->
+        <div class="carousel fade-in">
+            <img src="https://via.placeholder.com/1200x400" alt="BCA Program">
+            <img src="https://via.placeholder.com/1200x400" alt="Innovative Learning">
+            <img src="https://via.placeholder.com/1200x400" alt="Join Our BCA Program">
+        </div>
+
+        <!-- Yearly Cards -->
+        <div class="grid">
+            <div class="card fade-in">
+                <div class="card-header">
+                    <h2>1st Year</h2>
+                </div>
+                <div class="card-content">
+                    <p>Subjects include:</p>
+                    <ul>
+                        <li>Fundamentals</li>
+                        <li>UNIX</li>
+                        <li>DOS</li>
+                        <li>FoxPro</li>
+                        <li>MS Office</li>
+                        <li>Mathematics</li>
+                        <li>English</li>
+                        <li>Hindi</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card fade-in">
+                <div class="card-header">
+                    <h2>2nd Year</h2>
+                </div>
+                <div class="card-content">
+                    <p>Subjects include:</p>
+                    <ul>
+                        <li>C Language</li>
+                        <li>Networking</li>
+                        <li>Mathematics</li>
+                        <li>Hindi</li>
+                        <li>English</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card fade-in">
+                <div class="card-header">
+                    <h2>3rd Year</h2>
+                </div>
+                <div class="card-content">
+                    <p>Subjects include:</p>
+                    <ul>
+                        <li>C++</li>
+                        <li>Java</li>
+                        <li>Data Structures</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 BCA Department. All rights reserved.</p>
+    </footer>
+</body>
+</html>
